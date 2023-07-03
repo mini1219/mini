@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDICT FRAGRANCE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./images/logo.png" alt="로고"></a>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#">SHOP</a>
+                    <ul class="snb">
+                        <li><a href="#">ALL</a></li>
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">PERFUME</a></li>
+                        <li><a href="#">HAND/BODY</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ACC</a></li>
+                    <hr>
+                    </ul>
+                </li>
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">SCENT</a></li>
+                <li><a href="./STORE.html">STORE</a></li>
+                <li><a href="#">C/S</a>
+                    <ul class="snb">
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                        <li><a href="#">QnA</a></li>
+                        <li><a href="#">FnQ</a></li>
+                     <hr>
+                    </ul>
+                </li>
+        <li><a href="#">MY PAGE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slide">
+        <div class="wide-slide">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <ul class="imgs">
+                <li><a href="#"><img src="./images/b01.png" alt="1"></a></li>
+                <li><a href="#"><img src="./images/a01.png" alt="2"></a></li>
+                <li><a href="#"><img src="./images/c01.png" alt="3"></a></li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        var slideIndex = 0;
+        var slides = document.querySelectorAll('.imgs li');
+      
+        function showSlide() {
+          for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+          }
+          slides[slideIndex].style.display = 'block';
+          slideIndex++;
+          if (slideIndex >= slides.length) {
+            slideIndex = 0;
+          }
+          setTimeout(showSlide, 3000);
+        }
+        showSlide();
+    </script>
+<hr>
+<div class="photomenu">
+    <ul class="fourmenu">
+      <li>
+        <h1>Eau de perfume  </h1>
+        <a href="#"><img src="./images/cc01.jpg" alt="menupic"></a>  
+      </li>
+      <li>
+        <h1>Solid perfume  </h1>
+        <a href="#"><img src="./images/cc02.jpg" alt="menupic"></a>
+      </li>
+      <li>
+        <h1>Home Fragrance  </h1>
+        <a href="#"><img src="./images/cc03.jpg" alt="menupic"></a>
+      </li>
+      <li>
+        <h1>Hand/Body  </h1>
+        <a href="#"><img src="./images/cc04.jpg" alt="menupic"></a>
+      </li>
+    </ul>
+  </div>
+
+
+  <hr>
+
+  <h2 class="h2">BEST SELLER</h2>
+  <hr>
+<div class="swiper mySwiper"> 
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> 
+    <a href="./beforesunset012.html"><img src="./images/im/beforesunset_01.jpg" alt="swiper-image"></a>
+    <span class="slide-text">비포선셋</span>
+  </div>
+  <div class="swiper-slide">
+    <a href="./EATTHEPEACH.html"><img src="./images/im/eatthepeach_01.jpg" alt="swiper-image"></a>
+    <span class="slide-text">잇더피치</span>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/im/peelthebergamot_01.jpg" alt="swiper-image">
+    <span class="slide-text">필더베르가못</span>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/im/voidwood_01.jpg" alt="swiper-image">
+    <span class="slide-text">보이드우드</span>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/im/nakedoakmoss_01.jpg" alt="swiper-image">
+    <span class="slide-text">네이키드오크모스</span>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/im/nakedpompia_01.jpg" alt="swiper-image">
+    <span class="slide-text">네이키드폼피아</span>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/im/hinoki_01.jpg" alt="swiper-image">
+    <span class="slide-text">히노키</span>
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/im/smokywood_01.jpg" alt="swiper-image">
+    <span class="slide-text">스모키우드</span>
+    
+
+  </div>    
+</div>
+<div class="swiper-pagination"></div>
+</div>
+<hr>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+<div class="insta">
+    <div class="instatext">
+    <h6>INSTAGRAM</h6>
+    <a href="https://www.instagram.com/addictfragrances/" target="_blank" class="instapic"><span>@addictfrangranes</span></a>
+    </div>
+    <a href="https://www.instagram.com/addictfragrances/" target="_blank" class="instapic">
+    <img src="./images/PIC01.jpg" alt="Instagram"></a>
+    <a href="https://www.instagram.com/addictfragrances/" target="_blank" class="instapic">
+    <img src="./images/PIC02.jpg" alt="Instagram"></a>
+    <a href="https://www.instagram.com/addictfragrances/" target="_blank" class="instapic">
+    <img src="./images/PIC03.jpg" alt="Instagram"></a>
+    <a href="https://www.instagram.com/addictfragrances/" target="_blank" class="instapic">
+    <img src="./images/PIC04.jpg" alt="Instagram"></a>
+    <a href="https://www.instagram.com/addictfragrances/" target="_blank" class="instapic">
+    <img src="./images/PIC05.jpg" alt="Instagram"></a>
+    <a href="https://www.instagram.com/addictfragrances/" target="_blank" class="instapic">
+    <img src="./images/PIC06.jpg" alt="Instagram"></a>
+</div>
+
+</body>
+
+<footer>
+  <div class="customer">
+  <p>CUSTOMER CENTER</p>
+  <p>1661-8148</p>
+  <p>10:00 - 17:00</p>
+  <p>토,일요일 및 공휴일 휴무</p>
+  </div>
+  <hr>
+  <div class="contact">
+  <p>CONTACT US</p>
+  <p>1661-8148</p>
+  <p>마케팅 제휴 문의</p>
+  <p>a-ddict@a-ddict.co.kr</p>
+  <p>입점 및 해외 수출 문의</p>
+  <p>global@11corp.co.kr</p>
+  </div>
+  <hr>
+  <div class="company">
+  <p>COMPANY INFO</p>
+  <p>주식회사 일레븐코퍼레이션 | 백창준</p>
+  <p>대표번호ㅣ1661-8148</p>
+  <p>주소ㅣ서울특별시 중구 남대문로 78, 5층(명동1가)</p>
+  <p>사업자등록번호ㅣ875-86-00859</p>
+  <p>통신판매신고번호ㅣ2022-서울중구-1672</p>
+  </div>
+  <hr>
+  <div class="footer-head">
+  <p>저작권 © 2023. 모든 권리 보유.</p>
+  <p>사업자정보확인 이용약관 개인정보처리방침</p>
+  </div>
+</footer>
+
+</html>
