@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>청주프라임병원</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./prime.css">
+</head>
+
+<body>
+
+
+
+  <header>
+
+    <a href="#" class="logo">
+      <img src="./prime/프라임병원엠블럼.png" alt="로고">
+    </a>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="#">병원소개</a>
+          <ul class="snb">
+            <li><a href="#">병원소개</a></li>
+            <li><a href="#">진료안내</a></li>
+            <li><a href="#">병원둘러보기</a></li>
+            <li><a href="#">병원이용안내</a></li>
+            <li><a href="#">의료진소개</a></li>
+            <li><a href="#">오시는길</a></li>
+          </ul>
+        </li>
+        <li><a href="#">질환정보</a>
+          <ul class="snb">
+            <li><a href="#">척추질환정보</a></li>
+            <li><a href="#">어깨질환정보</a></li>
+            <li><a href="#">손.팔꿈치질환정보</a></li>
+            <li><a href="#">무릎관절질환정보</a></li>
+            <li><a href="#">고관절관절질환정보</a></li>
+            <li><a href="#">발.발목관절질환정보</a></li>
+          </ul>
+        </li>
+        <li><a href="#">척추센터</a>
+          <ul class="snb">
+            <li><a href="#">척추내시경클리닉</a></li>
+            <li><a href="#">척추현미경클리닉</a></li>
+            <li><a href="#">척추시술클리닉</a></li>
+            <li><a href="#">척추비수술클리닉</a></li>
+          </ul>
+        </li>
+        <li><a href="#">관절센터</a>
+          <ul class="snb">
+            <li><a href="#">무릎내시경클리닉</a></li>
+            <li><a href="#">어깨내시경클리닉</a></li>
+            <li><a href="#">인공관절클리닉</a></li>
+            <li><a href="#">손.팔꿈치클리닉</a></li>
+            <li><a href="#">발.발목클리닉</a></li>
+          </ul>
+        </li>
+        <li><a href="#">통증재활센터</a>
+          <ul class="snb">
+            <li><a href="#">도수/운동치료</a></li>
+            <li><a href="#">체외/충격파치료</a></li>
+            <li><a href="#">물리치료</a></li>
+          </ul>
+        </li>
+        <li><a href="#">내과/검진센터</a>
+          <ul class="snb">
+            <li><a href="#">내과질환정보</a></li>
+            <li><a href="#">종합검진</a></li>
+          </ul>
+        </li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="reserve">온라인예약</a>
+  </header>
+  <hr>
+
+
+
+  <section class="slide">
+    <div class="wide-slide">
+      <input type="radio" name="slide" id="slide1" checked>
+      <input type="radio" name="slide" id="slide2">
+      <input type="radio" name="slide" id="slide3">
+      <ul class="imgs">
+        <li><a href="#"><img src="./prime/전경.jpeg" alt="1"></a></li>
+        <li><a href="#"><img src="./prime/수술.jpeg" alt="2"></a></li>
+        <li><a href="#"><img src="./prime/내부.jpeg" alt="3"></a></li>
+      </ul>
+      <div class="text-overlay">
+        <p>JOINT,SPINE,HEALTH CARE</p>
+        <p>CHEONGJU PRIME HOSPITAL</p>
+      </div>
+    </div>
+    <hr>
+  </section>
+  <script>
+    var slideIndex = 0;
+    var slides = document.querySelectorAll('.imgs li');
+
+    function showSlide() {
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slides[slideIndex].style.display = 'block';
+      slideIndex++;
+      if (slideIndex >= slides.length) {
+        slideIndex = 0;
+      }
+      setTimeout(showSlide, 3000);
+    }
+    showSlide();
+  </script>
+
+  <div class="official">
+    <ul class="speaker">
+      <li><a href="#">공지사항</a></li>
+      <li><a href="#">2023년 7월 진료일정안내</a></li>
+    </ul>
+
+    <ul class="open">
+      <li><a href="#">진료시간</a></li>
+      <li><a href="#">평 일AM 09:00 ~ PM 05:30</a></li>
+      <li><a href="#">토요일AM 09:00 ~ PM 01:00</a></li>
+    </ul>
+  </div>
+  <hr>
+
+  <ul class="medi-title">
+    <li><a href="#">청주프라임병원의
+        노하우로 완성된 치료법
+      </a></li>
+  </ul>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./prime/inner001.png" alt="inner001">
+      </div>
+      <div class="swiper-slide">
+        <img src="./prime/inner002.png" alt="inner002">
+      </div>
+      <div class="swiper-slide">
+        <img src="./prime/inner003.png" alt="inner003">
+      </div>
+      <div class="swiper-slide">
+        <img src="./prime/inner001.png" alt="inner001">
+      </div>
+      <div class="swiper-slide">
+        <img src="./prime/inner002.png" alt="inner002">
+      </div>
+      <div class="swiper-slide">
+        <img src="./prime/inner003.png" alt="inner003">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 3,
+      loop: true,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  <hr>
+
+  <ul class="medi-title">
+    <li><a href="#">서울대, 연세대 출신의
+        풍부한 임상경험을 가진 의료진
+      </a></li>
+  </ul>
+  <div class="doctor-pic">
+    <img src="./prime/의사선생님.jpg" alt="photo">
+  </div>
+
+</body>
+
+</html>
