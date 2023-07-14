@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADDICT FRAGRANCE</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="main.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -56,23 +55,7 @@
             </ul>
         </div>
     </section>
-    <script>
-        var slideIndex = 0;
-        var slides = document.querySelectorAll('.imgs li');
-      
-        function showSlide() {
-          for (var i = 0; i < slides.length; i++) {
-            slides[i].style.display = 'none';
-          }
-          slides[slideIndex].style.display = 'block';
-          slideIndex++;
-          if (slideIndex >= slides.length) {
-            slideIndex = 0;
-          }
-          setTimeout(showSlide, 3000);
-        }
-        showSlide();
-    </script>
+    <script src="main.js"></script>
 <hr>
 <div class="photomenu">
     <ul class="fourmenu">
@@ -143,16 +126,7 @@
 <hr>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+  <script src="main.js"></script>
 
 <div class="insta">
     <div class="instatext">
@@ -205,6 +179,7 @@
   <p>저작권 © 2023. 모든 권리 보유.</p>
   <p>사업자정보확인 이용약관 개인정보처리방침</p>
   </div>
+  <hr>
 </footer>
 
 </html>
