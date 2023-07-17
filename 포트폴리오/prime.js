@@ -15,23 +15,22 @@ function showSlide() {
 showSlide();
 
 
+
 var swiper1 = new Swiper(".mySwiper1", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 3,
-    loop: true,
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
+    spaceBetween: 30,
+    effect: "fade",
+    loop:true
+    ,navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     pagination: {
-        el: ".swiper-pagination",
+      el: ".swiper-pagination",
+      clickable: true,
     },
-});
+  });
+
+
 
 var swiper2 = new Swiper(".mySwiper2", {
     slidesPerView: 2,
@@ -42,3 +41,28 @@ var swiper2 = new Swiper(".mySwiper2", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+
+  function confirmReservation() {
+    const confirmationMessage = "예약 확인후 연락드리겠습니다";
+    alert(confirmationMessage);
+}
+
+// var swiper1 = new Swiper(".mySwiper1", {
+//     effect: "coverflow",
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: 3,
+//     loop: true,
+//     coverflowEffect: {
+//         rotate: 50,
+//         stretch: 0,
+//         depth: 100,
+//         modifier: 1,
+//         slideShadows: true,
+//     },
+//     pagination: {
+//         el: ".swiper-pagination",
+//     },
+// });

@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 0 20px;
+}
+
+header .logo img {
+  width: 100px;
+}
+
+nav {
+  padding: 5px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul.snb {
+  padding: 0 20px;
+  flex-direction: column;
+  gap: 4px;
+  background: black;
+  border: 1px solid #eee;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: none; /* 초기에는 숨김 */
+}
+
+nav > ul li {
+  height: 100%;
+  position: relative;
+}
+
+nav > ul > li:hover ul.snb {
+  display: flex; /* hover 시에만 나타남 */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav > ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.header {
+  text-align: center;
+}
+
+.menu li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.menu li:nth-child(1):hover ~ .snb,
+.menu li:nth-child(6):hover ~ .snb {
+  display: flex;
+  margin-right: auto; /* 1번과 6번 메뉴에 hover 시에만 .snb가 나타남 */
+}
+
+.headline img{
+    width: 2000px;
+    height: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media screen and (max-width:575.98px){
+
+}
+.items{
+  line-height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex-basis: 33.33%;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 70px;
+  display: block;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+@media screen and (max-width:575.98px){
+
+}
+footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  
+}
+
+footer p {
+  color: white;
+  margin: 10px;
+  position: relative;
+  margin-left: 150px;
+}
+
+.footer-head{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+@media screen and (max-width:575.98px){
+
+}
