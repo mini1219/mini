@@ -102,9 +102,7 @@ nav > ul li a {
   margin-left: auto;
 } */
 
-@media screen and (max-width:575.98px){
 
-}
 
 /* 슬라이드 */
 
@@ -144,9 +142,7 @@ nav > ul li a {
 }
  
 
-@media screen and (max-width:575.98px){
 
-}
 
  /* 메뉴 */
 
@@ -189,9 +185,6 @@ nav > ul li a {
 }
 
 
-@media screen and (max-width:575.98px){
-
-}
 
 /* 제품슬라이드 */
 
@@ -243,9 +236,7 @@ nav > ul li a {
   }
 
 
-  @media screen and (max-width:575.98px){
-
-  }
+ 
 
 /* 인스타그램 */
 
@@ -286,9 +277,6 @@ nav > ul li a {
 }
 
 
-@media screen and (max-width:575.98px){
-
-}
 
 /* 푸터 */
 footer {
@@ -313,6 +301,3 @@ footer p {
 }
 
 
-@media screen and (max-width:575.98px){
-
-}
