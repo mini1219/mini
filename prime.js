@@ -49,20 +49,17 @@ var swiper2 = new Swiper(".mySwiper2", {
     alert(confirmationMessage);
 }
 
-// var swiper1 = new Swiper(".mySwiper1", {
-//     effect: "coverflow",
-//     grabCursor: true,
-//     centeredSlides: true,
-//     slidesPerView: 3,
-//     loop: true,
-//     coverflowEffect: {
-//         rotate: 50,
-//         stretch: 0,
-//         depth: 100,
-//         modifier: 1,
-//         slideShadows: true,
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//     },
-// });
+
+
+function openPopup() {
+  var popup = document.getElementById('floating-popup');
+  popup.style.display = 'block';
+}
+
+
+function closePopup() {
+  var popup = document.getElementById('floating-popup');
+  popup.style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', openPopup);
