@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./prime_re.css">
+</head>
+<body>
+<div class="online">
+    <div class="headline">간편온라인예약</div>
+    <p class="onlineex">온라인예약은 병원콜센터 확인전화 후 예약이 정상완료됩니다</p>
+    <div class="form">
+        <input type="text" name="userid" value="" placeholder="이름">
+        <input type="text" name="userid" value="" placeholder="연락처">
+        <textarea rows="3" cols="80" maxlength="225" placeholder="증상"></textarea>
+        <label class="agree-label">개인정보제공동의</label>
+        <div class="radio-group">
+            <input type="radio" name="agree" value="yes" id="agree-yes">
+            <label for="agree-yes" class="radio-label">동의</label>
+            <input type="radio" name="agree" value="no" id="agree-no">
+            <label for="agree-no" class="radio-label">비동의</label>
+        </div>
+        <div class="btnfield">
+            <input type="submit" value="신청" onclick="confirmReservation()">
+        </div>
+    </div>
+</div>    
+</body>
+<script src="prime_re.js"></script>
+</html>
+
+
